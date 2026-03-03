@@ -37,19 +37,22 @@ export default function Voting({ params }: { params: { slug: string } }) {
 
   const multistepComponets = [
     <QuestionVote
+      key="step-question"
       description={query.data?.data.description}
       question={query.data?.data.question}
     />,
     <VotingConditions
+      key="step-conditions"
       anonymity={query.data?.data.anonymity}
       quorum={query.data?.data.quorum}
     />,
     <VotingTypeChoice
+      key="step-type"
       question={query.data?.data.question!}
       type={query.data?.data.type!}
       options={query.data?.data.options}
     />,
-    <VotingFeedback />,
+    <VotingFeedback key="step-feedback" />,
   ];
 
   const [step, setStep] = useState<number>(0);

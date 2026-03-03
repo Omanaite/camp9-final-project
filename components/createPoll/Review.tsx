@@ -72,7 +72,7 @@ export default function Review() {
         )}
         {filteredSteps.map((step, index) => (
           <button
-            key={index}
+            key={`${step.title}-${index}`}
             type="button"
             onClick={() => setStepIndex(step.step)}
             className="text-start"

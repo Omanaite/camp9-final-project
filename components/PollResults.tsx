@@ -120,7 +120,7 @@ export default function PollResults({ poll }: { poll: PollResultsProps }) {
 
   const cards = [
     //0.svg+text
-    <PollResultsCard
+    <PollResultsCard key={0}
       pollQuestion={questionFitter(poll.question, 60).questionStart}
       endDate={new Date()}
       startDate={new Date()}
@@ -144,7 +144,7 @@ export default function PollResults({ poll }: { poll: PollResultsProps }) {
     </PollResultsCard>,
 
     //1.question=description
-    <PollResultsCard
+    <PollResultsCard key={1}
       pollQuestion={questionFitter(poll.question, 32).questionStart}
       endDate={new Date()}
       startDate={new Date()}
@@ -183,7 +183,7 @@ export default function PollResults({ poll }: { poll: PollResultsProps }) {
     </PollResultsCard>,
 
     //2.voting conditions
-    <PollResultsCard
+    <PollResultsCard key={2}
       pollQuestion={questionFitter(poll.question, 32).questionStart}
       endDate={new Date()}
       startDate={new Date()}
@@ -229,7 +229,7 @@ export default function PollResults({ poll }: { poll: PollResultsProps }) {
 
     //3.answers+percantages
     //sort options by percentages or by appearence in the poll?
-    <PollResultsCard
+    <PollResultsCard key={3}
       pollQuestion={questionFitter(poll.question, 32).questionStart}
       endDate={new Date()}
       startDate={new Date()}
@@ -279,7 +279,7 @@ export default function PollResults({ poll }: { poll: PollResultsProps }) {
     </PollResultsCard>,
 
     //4.mood
-    <PollResultsCard
+    <PollResultsCard key={4}
       pollQuestion={questionFitter(poll.question, 32).questionStart}
       endDate={new Date()}
       startDate={new Date()}

@@ -46,7 +46,7 @@ function VotingTypeChoice({ type, options, question }: Props) {
         <QuestionViewBox question={question} />
         <div className="overflow-y-auto h-[290px] scrollbarteal">
           {options.map((option, idx) => (
-            <Questionbox variant="secondary" key={idx}>
+            <Questionbox variant="secondary" key={`${option}-${idx}`}>
               <CheckboxButton
                 id={`${idx}`}
                 type="checkbox"
@@ -56,7 +56,7 @@ function VotingTypeChoice({ type, options, question }: Props) {
                 {...register('answer')}
                 onClick={() => handleSingleChoice(option)}
               />
-              <p key={option}>{option}</p>
+              <p>{option}</p>
             </Questionbox>
           ))}
           <Questionbox variant="secondary">
@@ -84,7 +84,7 @@ function VotingTypeChoice({ type, options, question }: Props) {
       </p>
       <div className="overflow-y-auto h-[290px] scrollbarteal">
         {options.map((option, idx) => (
-          <Questionbox variant="secondary" key={idx}>
+          <Questionbox variant="secondary" key={`${option}-${idx}`}>
             <CheckboxButton
               id="multipleChoice"
               type="checkbox"
@@ -94,7 +94,7 @@ function VotingTypeChoice({ type, options, question }: Props) {
               value={option}
               onClick={() => handleMultipleChoice(option)}
             />
-            <p key={option}>{option}</p>
+            <p>{option}</p>
           </Questionbox>
         ))}
         <Questionbox variant="secondary">

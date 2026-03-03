@@ -90,7 +90,7 @@ export default function AddParticipants() {
           {participants.map((participant, idx) => {
             return (
               <div
-                key={idx}
+                key={`${participant}-${idx}`}
                 className={clsx(
                   participants.indexOf(participant) % 2 === 0
                     ? 'bg-peach'
@@ -100,7 +100,7 @@ export default function AddParticipants() {
               >
                 <p className="body ">{participant}</p>
                 <button
-                  key={participant}
+                  aria-label={`Remove ${participant}`}
                   className=" text-black  body border-2 shadow border-black rounded-md px-[7px] py-[0px]"
                   onClick={() => {
                     setParticipants(prev =>
