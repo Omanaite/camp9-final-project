@@ -14,6 +14,7 @@ export async function POST(request: IRequest) {
   try {
     signUpSchema.parse({ username, password, confirmPassword });
   } catch (err) {
+    console.error('Signup validation error:', err);
     return NextResponse.json('Invalid user input', { status: 422 });
   }
 
@@ -28,6 +29,7 @@ export async function POST(request: IRequest) {
       { status: 201 }
     );
   } catch (err) {
+    console.error('Signup create user error:', err);
     if (
       err instanceof Prisma.PrismaClientKnownRequestError &&
       err.code === 'P2002'

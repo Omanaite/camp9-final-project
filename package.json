@@ -11,7 +11,7 @@
     "build-storybook": "storybook build"
   },
   "prisma": {
-    "seed": "node --experimental-specifier-resolution=node --loader ts-node/esm prisma/seed.ts"
+    "seed": "node prisma/seed.cjs"
   },
   "depenencies_comments": {
     "next": "rolled back to 13.4.3 due to known middleware error https://stackoverflow.com/questions/76422276/module-parse-failed-identifier-nextresponse-has-already-been-declared-36-m"
