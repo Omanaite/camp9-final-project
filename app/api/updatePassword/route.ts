@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { confirmPasswordSchema } from '@/types/user/AuthSchemata';
 import { db } from '@/libs/db';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 interface incomingData {
   password: string;
