@@ -14,6 +14,7 @@ export default function LandingPage() {
         <Image
           src={applogo}
           alt="illustration of a group of people making decisions"
+          fill
         />
         <div className="text-black text-center text-xl font-semibold my-3">
           Vote secretly, reveal conditionally

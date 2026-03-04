@@ -78,7 +78,7 @@ function PollActivityCards({
               alt="No polls"
               className="w-[250px]"
               width={250}
-              height={250}          
+              height={280}          
             />
             <h1 className="title-bold text-center">No polls to see.</h1>
           </div>

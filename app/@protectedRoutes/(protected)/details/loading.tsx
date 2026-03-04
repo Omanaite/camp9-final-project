@@ -8,6 +8,8 @@ function loading() {
         src="/images/flame-dreaming-of-unicorns.gif"
         alt="Loading animation"
         className="w-[280px]"
+        width={280}
+        height={280}
       />
       <h3 className="title-bold">Loading...</h3>
     </div>
