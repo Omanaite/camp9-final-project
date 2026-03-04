@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from 'next/image'
 
 function Loading() {
   return (
     <div className="flex flex-col justify-center items-center mt-20">
-      <img
+      <Image
         src="/images/flame-dreaming-of-unicorns.gif"
         alt="Loading animation"
         className="w-[280px]"
