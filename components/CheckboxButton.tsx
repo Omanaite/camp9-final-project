@@ -31,6 +31,8 @@ const CheckboxButton = forwardRef<HTMLInputElement, Props>(
                 src="/images/icons/checkSvg.svg"
                 alt="checked box"
                 className="items-center"
+                width={20}
+                height={20}
               />
             </div>
           )}
