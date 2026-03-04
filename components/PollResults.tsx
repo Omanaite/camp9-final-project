@@ -12,12 +12,26 @@ import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 import ProgressBar from './shared/ProgressBar';
 import CheckboxButton from './CheckboxButton';
 
+// Al principio del archivo, después de los imports
+type VoteWithUser = {
+  answer: boolean[];
+  mood: string;
+  User: {
+    name: string | null;
+  };
+};
+
+type PollWithRelations = Poll & {
+  participants: User[];
+  votes: VoteWithUser[];
+};
+
 interface PollResultsProps extends Poll {
   participants: User[];
   votes: Vote[];
 }
 
-export default function PollResults({ poll }: { poll: PollResultsProps }) {
+export default function PollResults({ poll }: { poll: PollWithRelations  }) {
   const router = useRouter();
   const [cardIndex, setCardIndex] = useState(0);
 
@@ -112,6 +126,9 @@ export default function PollResults({ poll }: { poll: PollResultsProps }) {
       usersWhoVotedForOptionArray.push(arrEntry)
     }
     return usersWhoVotedForOptionArray;
+
+
+    5
   })();
 
   ///////////
