@@ -14,7 +14,9 @@ const nextConfig = {
           '@prisma/client': 'require("@prisma/client")',
         })
 }
-  }
+return config;
+}
+  
 }
 module.exports = nextConfig
 
