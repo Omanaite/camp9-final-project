@@ -278,7 +278,7 @@ export default function PollResults({ poll }: { poll: PollWithRelations  }) {
                   <>
                     <p>see voters</p>
                     <Image
-                      src="/images/icons/arrowDown.png"
+                      src="/images/Icons/arrowDown.png"
                       width={13}
                       height={16}
                       alt="show participants who voted for this option"

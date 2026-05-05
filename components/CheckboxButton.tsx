@@ -28,7 +28,7 @@ const CheckboxButton = forwardRef<HTMLInputElement, Props>(
           ) : (
             <div className="w-[36px] h-[36px] bg-peach shadow-brutal border-brutal rounded-md flex items-center justify-center">
               <Image
-                src="/images/icons/checkSvg.svg"
+                src="/images/Icons/checkSvg.svg"
                 alt="checked box"
                 className="items-center"
                 width={20}
