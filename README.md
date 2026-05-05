@@ -6,21 +6,38 @@ A full-stack web application that allows users to **create, manage, and vote on 
 
 ## 📸 Screenshots
 
+### Login Page
+<!-- Add a screenshot of the landing / home page here -->
+![Login Page](./public/screenshots/login.png)
+
 ### Landing Page
 <!-- Add a screenshot of the landing / home page here -->
 ![Landing Page](./public/screenshots/landing.png)
 
 ### Create a Poll
 <!-- Add a screenshot of the poll creation form here -->
-![Create Poll](./public/screenshots/create-poll.png)
+![Create poll](./public/screenshots/create-poll/create-poll.png)
+![Answer option poll](./public/screenshots/create-poll/answer-options.png)
+![Reveal condition](./public/screenshots/create-poll/reveal-conditions.png)
+![Deadline](./public/screenshots/create-poll/deadline.png)
+![Add participants](./public/screenshots/create-poll/add-participants.png)
+![Review](./public/screenshots/create-poll/review.png)
 
 ### Voting View
 <!-- Add a screenshot of the voting interface here -->
-![Voting](./public/screenshots/voting.png)
+![Question](./public/screenshots/voting/1.png)
+![About this poll](./public/screenshots/voting/2.png)
+![Your vote](./public/screenshots/voting/3.png)
+![Your mood](./public/screenshots/voting/4.png)
+![Thanks for voting](./public/screenshots/voting/5.png)
 
 ### Results Page
 <!-- Add a screenshot of the results visualization here -->
-![Results](./public/screenshots/results.png)
+![Poll results](./public/screenshots/results/1.png)
+![Poll question](./public/screenshots/results/2.png)
+![Poll answer options](./public/screenshots/results/3.png)
+![Poll results %](./public/screenshots/results/4.png)
+![Poll mood](./public/screenshots/results/5.png)
 
 ---
 
