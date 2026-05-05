@@ -16,12 +16,12 @@ A full-stack web application that allows users to **create, manage, and vote on 
 
 ### Create a Poll
 <!-- Add a screenshot of the poll creation form here -->
-![Create poll](./public/screenshots/create-poll/create-poll.png)
-![Answer option poll](./public/screenshots/create-poll/answer-options.png)
-![Reveal condition](./public/screenshots/create-poll/reveal-conditions.png)
-![Deadline](./public/screenshots/create-poll/deadline.png)
-![Add participants](./public/screenshots/create-poll/add-participants.png)
-![Review](./public/screenshots/create-poll/review.png)
+![Create poll](./public/screenshots/createpoll/create-poll.png)
+![Answer option poll](./public/screenshots/createpoll/answer-options.png)
+![Reveal condition](./public/screenshots/createpoll/reveal-conditions.png)
+![Deadline](./public/screenshots/createpoll/deadline.png)
+![Add participants](./public/screenshots/createpoll/add-participants.png)
+![Review](./public/screenshots/createpoll/review.png)
 
 ### Voting View
 <!-- Add a screenshot of the voting interface here -->
